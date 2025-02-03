@@ -1,33 +1,81 @@
-*{
-    color: red;
-    /* font-size: 24px; */
-}
-.custom-button {
-    background-color: #4CAF50; 
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 12px; 
-    transition-duration: 0.2s; 
-}
 
-.custom-button:hover {
-    background-color: white; 
-    color: #4CAF50;
-    border: 3px solid #4CAF50; 
+body{
+    background-color: darkgrey;
+    color: black;
+    html,body{
+        height:100%;
+      }
+      body{
+        text-align:center;
+      }
+      body:before{
+        content:'';
+        height:100%;
+        display:inline-block;
+        vertical-align:middle;
+      }
+    }
+      button{
+        background:#1AAB8A;
+        color:white;
+        border:none;
+        position:relative;
+        height:50px;
+        font-size:1.6em;
+        padding:0 2em;
+        cursor:pointer;
+        transition:800ms ease all;
+        outline:none;
+      }
+      button:hover{
+        background: darkgrey;
+        color:white;
+      }
+      button:before,button:after{
+        content:'';
+        position:absolute;
+        top:0;
+        right:0;
+        height:4px;
+        width:0;
+        background: #1AAB8A;
+        transition:400ms ease all;
+      }
+      button:after{
+        right:inherit;
+        top:inherit;
+        left:0;
+        bottom:0;
+      }
+      button:hover:before,button:hover:after{
+        width:100%;
+        transition:800ms ease all;
+      }
+h2,h3,h4,h5{
+    color: blue ;
 }
-.bordered-text {
-    color: #000; /* Text color */
-    text-shadow: 
-      -1px -1px 0 #fff,  
-      1px -1px 0 #fff,
-      -1px 1px 0 #fff,
-      1px 1px 0 #fff; /* Border color */
-  }
-  
+p{
+    font-size: 30px;
+    font-weight: bolder;
+}
+table, th, td {
+    border: 1px solid black;
+    font-weight: bolder;
+}
+div p {
+    color: blue;
+}
+.loichuc p {
+    font-size: 45px;
+    color: black;
+}
+/* tác dụng lên thẻ p là thẻ con trực tiếp của div */
+/* div > p {
+    color: black;
+    font-size: 30px;
+} */
+ tr{
+    color: blue;
+    font-style: italic;
+    text-align: center;
+ }
