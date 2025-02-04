@@ -62,9 +62,6 @@ table, th, td {
     border: 1px solid black;
     font-weight: bolder;
 }
-div p {
-    color: blue;
-}
 .loichuc p {
     font-size: 45px;
     color: black;
@@ -78,4 +75,8 @@ div p {
     color: blue;
     font-style: italic;
     text-align: center;
+ }
+ div{
+text-decoration-line: underline;
+font-style: italic;
  }
